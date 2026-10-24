@@ -1,0 +1,22 @@
+{
+  "name": "obsidian-worklogger",
+  "version": "1.0.0",
+  "description": "An editable timesheet stored inside your Obsidian notes.",
+  "private": true,
+  "license": "MIT",
+  "author": "gertyhiler",
+  "repository": "github:gertyhiler/obsidian-worklogger",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "test": "node --test",
+    "check": "node --check src/main.js && npm run build && npm test",
+    "format": "prettier --write src styles.css esbuild.config.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "prettier": "3.9.10"
+  }
+}

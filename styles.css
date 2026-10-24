@@ -1,0 +1,44 @@
+.worklogger{--worklogger-accent:#258b92;padding:16px;max-width:none!important}.worklogger-top,.worklogger-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}.worklogger-total{font-size:30px;letter-spacing:-1px;color:var(--text-normal)}.worklogger-muted,.worklogger-help{color:var(--text-muted);font-size:12px}.worklogger-help{margin:12px 0}.worklogger input[type=date]{width:143px}.worklogger button.is-active{background:var(--worklogger-accent);color:white}.worklogger-scroll{overflow:auto;max-height:72vh;border:1px solid var(--background-modifier-border);border-radius:10px}.worklogger-grid{display:grid;grid-template-columns:52px repeat(var(--days),minmax(86px,1fr));min-width:calc(52px + var(--days)*86px);background:var(--background-primary)}.worklogger-head{position:sticky;top:0;z-index:3;background:var(--background-primary);padding:12px 4px;text-align:center;font-size:12px;border-bottom:1px solid var(--background-modifier-border);font-weight:600}.worklogger-head.in-period{color:var(--worklogger-accent)}.worklogger-axis{position:relative;background:var(--background-primary)}.worklogger-axis span{position:absolute;right:8px;font-size:10px;color:var(--text-muted)}.worklogger-day{position:relative;border-left:1px solid var(--background-modifier-border);background:repeating-linear-gradient(to bottom,transparent 0,transparent 47px,var(--background-modifier-border) 47px,var(--background-modifier-border) 48px);touch-action:none;user-select:none}.worklogger-event{position:absolute;left:3px;right:3px;background:color-mix(in srgb,var(--worklogger-accent) 19%,var(--background-primary));border:1px solid color-mix(in srgb,var(--worklogger-accent) 65%,transparent);border-left:3px solid var(--worklogger-accent);border-radius:6px;cursor:grab;overflow:hidden;z-index:1;min-height:12px}.worklogger-event:focus{outline:2px solid var(--worklogger-accent);z-index:2}.worklogger-label{white-space:pre-line;font-size:11px;line-height:1.5;padding:9px 5px;pointer-events:none}.worklogger-event .worklogger-delete{position:absolute;right:2px;top:7px;box-shadow:none;background:var(--background-primary);padding:0;width:19px;height:19px;opacity:0;z-index:2}.worklogger-event:hover .worklogger-delete,.worklogger-event:focus-within .worklogger-delete{opacity:1}.worklogger-handle{position:absolute;height:7px;left:0;right:0;cursor:ns-resize;z-index:2}.worklogger-handle.top{top:0}.worklogger-handle.bottom{bottom:0}.worklogger-handle:hover{background:var(--worklogger-accent)}.worklogger-error{color:var(--text-error);padding:8px 0}
+.worklogger-page .markdown-preview-sizer{max-width:none!important}.worklogger button:focus-visible,.worklogger input:focus-visible{outline:2px solid var(--worklogger-accent);outline-offset:2px}
+
+/* Scoped interval editor: retain the host theme, with a deliberate form layout. */
+.modal.worklogger-edit-modal{width:400px;max-width:calc(100vw - 32px);padding:28px;border-radius:18px}
+.worklogger-edit-modal .modal-content{margin:0;padding:0;overflow:visible}
+.worklogger-edit-eyebrow{color:var(--text-muted);font-size:10px;font-weight:600;letter-spacing:.12em;margin-bottom:6px}
+.worklogger-edit-modal .worklogger-edit-title{margin:0 0 24px;font-size:24px;line-height:1.2;letter-spacing:-.02em}
+.worklogger-edit-form{display:flex;flex-direction:column;gap:18px}
+.worklogger-edit-field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.worklogger-edit-field label{font-size:13px;font-weight:500;color:var(--text-muted)}
+.worklogger-edit-field input{display:block;width:100%;min-width:0;height:44px;box-sizing:border-box;padding:10px 12px;border:1px solid var(--background-modifier-border);border-radius:9px;background:var(--background-primary);color:var(--text-normal);font-size:16px;font-variant-numeric:tabular-nums;box-shadow:none}
+.worklogger-edit-field input:focus{border-color:var(--interactive-accent);outline:2px solid color-mix(in srgb,var(--interactive-accent) 25%,transparent);outline-offset:1px}
+.worklogger-edit-times{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.worklogger-edit-hint{font-size:11px;color:var(--text-faint)}
+.worklogger-edit-duration{padding:12px 14px;border-radius:9px;background:var(--background-secondary);color:var(--text-muted);font-size:13px}
+.worklogger-edit-duration.is-invalid,.worklogger-edit-error{color:var(--text-error)}
+.worklogger-edit-error:empty{display:none}
+.worklogger-edit-error{font-size:12px;line-height:1.4}
+.worklogger-edit-actions{display:flex;justify-content:flex-end;gap:10px;padding-top:4px}
+.worklogger-edit-actions button{height:40px;padding:0 18px;border-radius:9px;font-size:13px}
+.worklogger-billing{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:0 0 16px}.worklogger-billing strong{font-size:20px;color:var(--worklogger-accent)}.worklogger-billing label{font-size:12px;color:var(--text-muted)}.worklogger-billing input{width:100px;margin-left:6px}.worklogger-token{font-variant-numeric:tabular-nums}.worklogger-token-error{color:var(--text-error)}
+
+/* Compact timesheet controls. */
+.worklogger-top{justify-content:space-between;gap:16px;margin-bottom:18px}
+.worklogger-period{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.worklogger-period input[type=date]{width:140px;background:transparent;border:0;box-shadow:none;padding:6px;color:var(--text-muted)}
+.worklogger-switch{display:flex;gap:2px;padding:3px;background:var(--background-secondary);border:1px solid var(--background-modifier-border);border-radius:9px}
+.worklogger-switch button{border:0;border-radius:6px;box-shadow:none;background:transparent;color:var(--text-muted);font-size:12px;padding:6px 12px;height:30px}
+.worklogger-switch button.is-active{background:var(--background-modifier-hover);color:var(--text-normal)}
+.worklogger-equation{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 20px;font-variant-numeric:tabular-nums}
+.worklogger-equation .worklogger-total,.worklogger-cost{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.4}
+.worklogger-symbol{color:var(--text-faint);font-size:18px;font-weight:400}
+.worklogger-equation .worklogger-rate{width:94px;height:36px;padding:4px 8px;text-align:center;border:1px solid var(--background-modifier-border);border-radius:7px;box-shadow:none;background:transparent;font-size:20px;color:var(--text-normal);font-variant-numeric:tabular-nums;-moz-appearance:textfield}
+.worklogger-rate::-webkit-inner-spin-button,.worklogger-rate::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.worklogger-unit{color:var(--text-muted);font-size:13px;margin-left:-6px}
+.worklogger-frame{position:relative}
+.worklogger-grid{grid-template-columns:52px repeat(var(--days),var(--day-width,100px));width:max-content;min-width:100%}
+.worklogger-frame .worklogger-add{position:absolute;bottom:24px;right:20px;z-index:5;width:44px;height:44px;display:flex;align-items:center;justify-content:center;padding:0;border-radius:50%;border:1px solid var(--background-modifier-border);background:var(--interactive-accent);color:var(--text-on-accent);font-size:28px;font-weight:300;line-height:1;box-shadow:0 4px 14px #0003}
+.worklogger-add:hover{filter:brightness(1.12)}
+
+.worklogger-add svg{width:20px;height:20px;display:block;stroke-width:2}.worklogger-edit-field textarea{width:100%;resize:vertical}.worklogger-description{color:var(--text-muted)}
+.modal.worklogger-edit-modal{max-height:calc(100vh - 48px);display:flex;flex-direction:column}.worklogger-edit-modal .modal-content{overflow-y:auto;min-height:0}.worklogger-edit-field textarea{box-sizing:border-box;min-height:80px;padding:10px 12px;border:1px solid var(--background-modifier-border);border-radius:9px;background:var(--background-primary);color:var(--text-normal);font:inherit;line-height:1.5}.worklogger-edit-field textarea:focus{border-color:var(--interactive-accent);outline:2px solid color-mix(in srgb,var(--interactive-accent) 25%,transparent);outline-offset:1px}
+.worklogger-currency{min-width:76px;font-variant-numeric:tabular-nums;align-self:center}
